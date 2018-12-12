@@ -67,6 +67,9 @@
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RadioButtonWindow.xaml.cs">
+      <DependentUpon>RadioButtonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResourceWindow.xaml.cs">
       <DependentUpon>ResourceWindow.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RadioButtonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResourceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
