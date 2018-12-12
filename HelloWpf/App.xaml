@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:HelloWpf"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              DispatcherUnhandledException="Application_DispatcherUnhandledException"
-             StartupUri="LabelWindow.xaml"
+             StartupUri="CheckBoxWindow.xaml"
 >
     <Application.Resources>
         <sys:String x:Key="strApp">hello application</sys:String>
