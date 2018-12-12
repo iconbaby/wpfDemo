@@ -13,5 +13,14 @@ namespace HelloWpf
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            ResourceWindow wnd = new ResourceWindow();
+            wnd.Title = "Command window";
+            if (e.Args.Length == 1) {
+                //MessageBox.Show("Now opening file:\n\n" + e.Args[0]);
+            }
+            wnd.Show();
+        }
     }
 }
