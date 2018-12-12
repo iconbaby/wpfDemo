@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center"
+            FontSize="72">
+            Hello,WPF
+        </TextBlock>
+        <Button FontWeight="Bold">
+            <WrapPanel>
+                <TextBlock Foreground="Blue">Mulit</TextBlock>
+                <TextBlock Foreground="Red">Color</TextBlock>
+                <TextBlock>Button</TextBlock>
+            </WrapPanel>
+        </Button>
     </Grid>
 </Window>
