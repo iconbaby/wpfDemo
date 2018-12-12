@@ -1,0 +1,25 @@
+﻿<Window x:Class="HelloWpf.TextBlockWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWpf"
+        mc:Ignorable="d"
+        Title="TextBlockWindow" Height="450" Width="400">
+    <StackPanel>
+        <TextBlock Foreground="Red" Margin="10" >This is a TextBlock <LineBreak/> test demo</TextBlock>
+        <TextBlock Foreground="Green" TextTrimming="CharacterEllipsis" Margin="10" >This is a TextBlock control with text that may not be rendered completely, which will be indicated with an ellipsis.</TextBlock>
+        <TextBlock Foreground="Blue" TextWrapping="wrap" Margin="10">This is a TextBlock control with automatically wrapped text, using the TextWrapping property</TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap"> This is a TextBlod <Bold>bold</Bold> <Underline>underline</Underline> <Italic>italic</Italic> demo</TextBlock>
+        <TextBlock Margin="10" Foreground="Orange"> This is a <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.baidu.com">baidu</Hyperlink></TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap">
+			This <Span FontWeight="Bold">is</Span> a
+			<Span Background="Silver" Foreground="Maroon">TextBlock</Span>
+			with <Span TextDecorations="Underline">several</Span>
+			<Span FontStyle="Italic">Span</Span> elements,
+			<Span Foreground="Blue">
+				using a <Bold>variety</Bold> of <Italic>styles</Italic>
+			</Span>.
+        </TextBlock>
+    </StackPanel>
+</Window>
