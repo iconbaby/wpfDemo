@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CheckBoxWindow.xaml.cs">
+      <DependentUpon>CheckBoxWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CommandWindow.xaml.cs">
       <DependentUpon>CommandWindow.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="CheckBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CommandWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

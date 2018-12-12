@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:HelloWpf"
         mc:Ignorable="d"
         Title="CheckBoxWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel Margin="10,5">
+        <Label FontWeight="Bold">Application Options</Label>
+        <CheckBox Name="cbAllFeature" FontWeight="Bold" IsThreeState="True" Checked="CbAllFeature_Checked"  Unchecked="CbAllFeature_Checked">Enable all Feature</CheckBox>
+        <StackPanel Margin="20,5">
+            <CheckBox Name="cbFeatureAbc" Checked="CbFeatureAbc_Checked">
+                <TextBlock>
+                Enable feature <Run Foreground="Green" FontWeight="Bold">ABC</Run>
+                </TextBlock>
+            </CheckBox>
+            <CheckBox Name="cbFeatureXyz" Checked="CbFeatureAbc_Checked">
+                <TextBlock>
+               Enable feature<Run FontWeight="Bold">XYZ</Run>
+                </TextBlock>
+            </CheckBox>
+            <CheckBox Name="cbFeatureWww" Checked="CbFeatureAbc_Checked" Unchecked="CbFeatureAbc_Checked">
+                <TextBlock  >
+                Enable feature <Run Foreground="Red" FontWeight="Bold">WWW</Run>
+                </TextBlock>
+            </CheckBox>
+        </StackPanel>
+
+
         
-    </Grid>
+    </StackPanel>
 </Window>
