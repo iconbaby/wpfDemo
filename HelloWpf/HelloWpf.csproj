@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BindingWindow.xaml.cs">
+      <DependentUpon>BindingWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CanvasWindow.xaml.cs">
       <DependentUpon>CanvasWindow.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
     <Compile Include="WrapPanelWindow.xaml.cs">
       <DependentUpon>WrapPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="BindingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CanvasWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
