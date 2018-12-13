@@ -1,0 +1,17 @@
+﻿<Window x:Class="HelloWpf.StackPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWpf"
+        mc:Ignorable="d"
+        Title="StackPanelWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <Button HorizontalAlignment="Left" >btn 1</Button>
+        <Button HorizontalAlignment="Right">btn 2</Button>
+        <Button HorizontalAlignment="Center">btn 3</Button>
+        <Button HorizontalAlignment="Stretch">btn 4</Button>
+        <Button VerticalAlignment="Top" MaxWidth="100">btn 5</Button>
+        <Button HorizontalAlignment="Left">btn 6</Button>
+    </StackPanel>
+</Window>
