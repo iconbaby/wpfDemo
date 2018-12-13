@@ -64,6 +64,9 @@
     <Compile Include="CommandWindow.xaml.cs">
       <DependentUpon>CommandWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactFormWindow.xaml.cs">
+      <DependentUpon>ContactFormWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DockPanelWindow.xaml.cs">
       <DependentUpon>DockPanelWindow.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,12 @@
     </Compile>
     <Compile Include="GridWindow2.xaml.cs">
       <DependentUpon>GridWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridWindow3.xaml.cs">
+      <DependentUpon>GridWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridWindow4.xaml.cs">
+      <DependentUpon>GridWindow4.xaml</DependentUpon>
     </Compile>
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
@@ -118,6 +127,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ContactFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DockPanelWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -131,6 +144,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GridWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GridWindow3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GridWindow4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
