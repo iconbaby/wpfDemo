@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnationTriggerWindow.xaml.cs">
+      <DependentUpon>AnationTriggerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BindingConvertWindow.xaml.cs">
       <DependentUpon>BindingConvertWindow.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,9 @@
     </Compile>
     <Compile Include="ContactFormWindow.xaml.cs">
       <DependentUpon>ContactFormWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DispatcherTimeWindow.xaml.cs">
+      <DependentUpon>DispatcherTimeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="DockPanelWindow.xaml.cs">
       <DependentUpon>DockPanelWindow.xaml</DependentUpon>
@@ -102,6 +108,9 @@
     </Compile>
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiDataStyleWindow.xaml.cs">
+      <DependentUpon>MultiDataStyleWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MultiTriggerStyleWindow.xaml.cs">
       <DependentUpon>MultiTriggerStyleWindow.xaml</DependentUpon>
@@ -139,6 +148,10 @@
     <Compile Include="WrapPanelWindow.xaml.cs">
       <DependentUpon>WrapPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AnationTriggerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BindingConvertWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -164,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ContactFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DispatcherTimeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,6 +232,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MultiDataStyleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MultiTriggerStyleWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
