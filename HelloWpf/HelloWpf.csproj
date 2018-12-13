@@ -64,8 +64,17 @@
     <Compile Include="CommandWindow.xaml.cs">
       <DependentUpon>CommandWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DockPanelWindow.xaml.cs">
+      <DependentUpon>DockPanelWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionWindow.xaml.cs">
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridWindow.xaml.cs">
+      <DependentUpon>GridWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridWindow2.xaml.cs">
+      <DependentUpon>GridWindow2.xaml</DependentUpon>
     </Compile>
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
@@ -109,7 +118,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DockPanelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExceptionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GridWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GridWindow2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
