@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:HelloWpf"
         mc:Ignorable="d"
         Title="SampleStyleWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Gray"/>
+            
+        </Style>
+    </Window.Resources>
     <StackPanel Margin="10">
         <StackPanel.Resources>
             <Style TargetType="TextBlock">
@@ -16,5 +22,15 @@
         <TextBlock>Header 1</TextBlock>
         <TextBlock>Header 2</TextBlock>
         <TextBlock Foreground="Blue">Header 3</TextBlock>
+        <TextBlock Text="Test Style">
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.Foreground" Value="yellow"></Setter>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <WrapPanel>
+            <TextBlock>wrapPanel TextBlock</TextBlock>
+        </WrapPanel>
     </StackPanel>
 </Window>
