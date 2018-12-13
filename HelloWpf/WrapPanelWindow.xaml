@@ -1,0 +1,20 @@
+﻿<Window x:Class="HelloWpf.WrapPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWpf"
+        mc:Ignorable="d"
+        Title="WrapPanelWindow" Height="300" Width="300">
+    <WrapPanel Orientation="Vertical">
+        <Button>button test 1</Button>
+        <Button>button test 2</Button>
+        <Button>button test 3</Button>
+        <Button Width="200" Height="200">button test 4</Button>
+        <Button>button test 5</Button>
+        <Button>button test 6</Button>
+        <Button>button test 7</Button>
+        <Button>button test 8</Button>
+        <Button>button test 9</Button>
+    </WrapPanel>
+</Window>
