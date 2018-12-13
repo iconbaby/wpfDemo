@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HelloWpf"
         mc:Ignorable="d"
         Title="DockPanelWindow" Height="450" Width="800">
-    <DockPanel Margin="10">
+    <DockPanel Margin="10" LastChildFill="False">
         <Button DockPanel.Dock="Top" Height="50">bt2</Button>
         <Button DockPanel.Dock="Bottom" Height="50">bt4</Button>
         <Button DockPanel.Dock="Left" Width="50">bt1</Button>
