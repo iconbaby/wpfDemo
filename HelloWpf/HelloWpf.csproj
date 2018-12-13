@@ -103,6 +103,9 @@
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MultiTriggerStyleWindow.xaml.cs">
+      <DependentUpon>MultiTriggerStyleWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PasswordBoxWindow.xaml.cs">
       <DependentUpon>PasswordBoxWindow.xaml</DependentUpon>
     </Compile>
@@ -212,6 +215,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MultiTriggerStyleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PasswordBoxWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
