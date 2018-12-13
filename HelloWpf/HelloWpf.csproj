@@ -79,6 +79,9 @@
     <Compile Include="DockPanelWindow.xaml.cs">
       <DependentUpon>DockPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataTriggerWindow.xaml.cs">
+      <DependentUpon>DataTriggerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionWindow.xaml.cs">
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DockPanelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataTriggerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
