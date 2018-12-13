@@ -7,6 +7,8 @@
              StartupUri="SampleStyleWindow.xaml">
     <Application.Resources>
         <sys:String x:Key="strApp">hello application</sys:String>
-        
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="gray"/>
+        </Style>
     </Application.Resources>
 </Application>
