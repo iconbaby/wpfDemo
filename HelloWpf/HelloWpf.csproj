@@ -82,6 +82,9 @@
     <Compile Include="TextBoxWindow.xaml.cs">
       <DependentUpon>TextBoxWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TextRenderingWindow.xaml.cs">
+      <DependentUpon>TextRenderingWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TextBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TextRenderingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
