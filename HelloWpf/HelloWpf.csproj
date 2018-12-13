@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BindingConvertWindow.xaml.cs">
+      <DependentUpon>BindingConvertWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BindingListViewWindow.xaml.cs">
       <DependentUpon>BindingListViewWindow.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,10 @@
     <Compile Include="WrapPanelWindow.xaml.cs">
       <DependentUpon>WrapPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="BindingConvertWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BindingListViewWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
