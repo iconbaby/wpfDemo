@@ -24,5 +24,11 @@ namespace HelloWpf
             InitializeComponent();
             this.DataContext = this;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BindingExpression binding =  txWindowTitle.GetBindingExpression(TextBox.TextProperty);
+            binding.UpdateSource();
+        }
     }
 }

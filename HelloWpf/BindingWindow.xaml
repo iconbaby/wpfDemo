@@ -14,13 +14,14 @@
         </WrapPanel>
         <WrapPanel Margin="10">
             <Label>Window Title:</Label>
-            <TextBox Width="100" Text="{Binding Title,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBox Name="txWindowTitle" Width="100" Text="{Binding Title,UpdateSourceTrigger=Explicit}"></TextBox>
+            <Button Margin="5,0" Padding="3" Click="Button_Click">update title</Button>
         </WrapPanel>
         <WrapPanel Margin="10">
             <Label>Window dimensions:</Label>
-            <TextBox Width="50" Margin="0,0,5,0" Text="{Binding Width}"></TextBox>
+            <TextBox Width="50" Margin="0,0,5,0" Text="{Binding Width, UpdateSourceTrigger=LostFocus}"></TextBox>
             <TextBlock VerticalAlignment="Center">X</TextBlock>
-            <TextBox Width="50" Margin="5,0,0,0" Text="{Binding Height}"></TextBox>
+            <TextBox Width="50" Margin="5,0,0,0" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         </WrapPanel>
 
     </StackPanel>
