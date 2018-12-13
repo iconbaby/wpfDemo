@@ -12,5 +12,16 @@
             <Label FontWeight="Bold">Value:</Label>
             <TextBlock Text="{Binding Path=Text,ElementName=tbInput}" Width="332"></TextBlock>
         </WrapPanel>
+        <WrapPanel Margin="10">
+            <Label>Window Title:</Label>
+            <TextBox Width="100" Text="{Binding Title,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </WrapPanel>
+        <WrapPanel Margin="10">
+            <Label>Window dimensions:</Label>
+            <TextBox Width="50" Margin="0,0,5,0" Text="{Binding Width}"></TextBox>
+            <TextBlock VerticalAlignment="Center">X</TextBlock>
+            <TextBox Width="50" Margin="5,0,0,0" Text="{Binding Height}"></TextBox>
+        </WrapPanel>
+
     </StackPanel>
 </Window>

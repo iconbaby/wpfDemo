@@ -22,6 +22,7 @@ namespace HelloWpf
         public BindingWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
     }
 }
