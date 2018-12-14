@@ -136,6 +136,9 @@
     <Compile Include="StackPanelWindow.xaml.cs">
       <DependentUpon>StackPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TabControlWindow.xaml.cs">
+      <DependentUpon>TabControlWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TextBlockWindow.xaml.cs">
       <DependentUpon>TextBlockWindow.xaml</DependentUpon>
     </Compile>
@@ -271,6 +274,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TabControlWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TextBlockWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -319,10 +326,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sunset_of_the_Lake_Nam_by_Wang_Jinyu.jpg" />
+    <Resource Include="Images\Sunset_of_the_Lake_Nam_by_Wang_Jinyu.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Scenery_in_Plateau_by_Arto_Marttinen.jpg" />
+    <Resource Include="Images\Scenery_in_Plateau_by_Arto_Marttinen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bullet-red.png" />
+    <Resource Include="Images\bullet-blue.png" />
+    <Resource Include="Images\bullet-yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

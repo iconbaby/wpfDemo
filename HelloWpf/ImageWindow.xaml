@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="ImageWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="/HelloWpf;component/Sunset_of_the_Lake_Nam_by_Wang_Jinyu.jpg"></Image>
+        <Image Source="/HelloWpf;component/Images/Sunset_of_the_Lake_Nam_by_Wang_Jinyu.jpg"></Image>
     </Grid>
 </Window>

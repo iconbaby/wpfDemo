@@ -4,10 +4,10 @@
              xmlns:local="clr-namespace:HelloWpf"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              DispatcherUnhandledException="Application_DispatcherUnhandledException"
-             StartupUri="ImageWindow.xaml">
+             StartupUri="TabControlWindow.xaml">
     <Application.Resources>
         <sys:String x:Key="strApp">hello application</sys:String>
-        <Style TargetType="TextBlock">
+        <Style x:Key="grayStyle" TargetType="TextBlock">
             <Setter Property="Foreground" Value="gray"/>
         </Style>
     </Application.Resources>
