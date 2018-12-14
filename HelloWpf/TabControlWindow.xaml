@@ -5,42 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloWpf"
         mc:Ignorable="d"
-        Title="TabControlWindow" Height="1000" Width="800">
+        Title="TabControlWindow" Height="600" Width="800" Background="#FF383E54">
     <DockPanel>
         <!--<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="10" HorizontalAlignment="Center" >
             <Button Name="btn_prev" Click="Btn_prev_Click" Padding="10" Margin="10" MinWidth="100">Prev</Button>
             <Button Name="btn_next" Click="Btn_next_Click" Padding="10" Margin="10" MinWidth="100">Next</Button>
             <Button Name="btn_selected" Click="Btn_selected_Click" Padding="10" Margin="10" MinWidth="100">Selected</Button>
         </StackPanel>-->
-        <TabControl Margin="10" Name="tc_control" TabStripPlacement ="Left" DockPanel.Dock="Left">
+        <TabControl Margin="10" Name="tc_control" TabStripPlacement ="Left" DockPanel.Dock="Left" BorderThickness="0" Background="#FF282A35">
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="1,1,0,1" BorderBrush="#FF383E54" CornerRadius="4,0,0,4" Margin="2,2,0,0">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="#FF282A35" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Border" Property="Background" Value="#FF383E54" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
             
-            <TabItem >
+            <TabItem>
                 <TabItem.Header>
                     <WrapPanel >
                         <Image Source="/HelloWpf;component/Images/bullet-blue.png" Stretch="None"></Image>
-                        <Label VerticalAlignment="Center" Foreground="Blue">General</Label>
+                        <Label VerticalAlignment="Center" Foreground="White">General</Label>
                     </WrapPanel>
                 </TabItem.Header>
-                <Label>this is General</Label>
+                <Label Foreground="#FFFFFFFF">this is General</Label>
             </TabItem>
             
             <TabItem >
                 <TabItem.Header>
                     <WrapPanel >
                         <Image Source="/HelloWpf;component/Images/bullet-red.png" Stretch="None"></Image>
-                        <Label VerticalAlignment="Center" Foreground="Red">Security</Label>
+                        <Label VerticalAlignment="Center" Foreground="White">Security</Label>
                     </WrapPanel>
                 </TabItem.Header>
-                <Label>This is Security</Label>
+                <Label Foreground="#FFFFFFFF">This is Security</Label>
             </TabItem>
             <TabItem >
                 <TabItem.Header>
                     <WrapPanel >
                         <Image Source="/HelloWpf;component/Images/bullet-yellow.png" Stretch="None"></Image>
-                        <Label VerticalAlignment="Center" Foreground="Yellow">Detail</Label>
+                        <Label VerticalAlignment="Center" Foreground="White">Detail</Label>
                     </WrapPanel>
                 </TabItem.Header>
-                <Label>This is Detail</Label>
+                <Label Foreground="#FFFFFFFF">This is Detail</Label>
             </TabItem>
         </TabControl>
 
