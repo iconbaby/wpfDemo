@@ -38,6 +38,14 @@
                     </Setter>
                 </Style>
             </TabControl.Resources>
+
+            <!--<TabItem>
+                <TabItem.Header>
+                    <WrapPanel >
+                        <Label VerticalAlignment="Center" Foreground="White" Height="60" FontSize="18" >HG STB Manager</Label>
+                    </WrapPanel>
+                </TabItem.Header>
+            </TabItem>-->
             
             <TabItem>
                 <TabItem.Header>
