@@ -22,6 +22,18 @@ namespace HelloWpf
         public ListViewWindow()
         {
             InitializeComponent();
+            List<UserList> listItem = new List<UserList>();
+            listItem.Add(new UserList { Name = "jone", Age = 12, EMail = "jone@163.com"});
+            listItem.Add(new UserList { Name = "mike", Age = 24, EMail = "mike@163.com" });
+            listItem.Add(new UserList { Name = "jane", Age = 25, EMail = "jane@163.com" });
+            lv_connect.ItemsSource = listItem;
         }
+    }
+
+    public class UserList
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string EMail { get; set; }
     }
 }

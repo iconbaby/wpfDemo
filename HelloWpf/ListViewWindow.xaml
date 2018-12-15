@@ -7,25 +7,23 @@
         mc:Ignorable="d"
         Title="ListViewWindow" Height="450" Width="800">
     <Grid Margin="10">
-        <ListView>
-            <ListViewItem>
-                <WrapPanel>
-                    <Image Source="/HelloWpf;component/Images/bullet-blue.png"></Image>
-                    <Label VerticalAlignment="Center" Foreground="Blue">Blue</Label>
-                </WrapPanel>
-            </ListViewItem>
-            <ListViewItem IsSelected="True" >
-                <WrapPanel>
-                    <Image Source="/HelloWpf;component/Images/bullet-red.png"></Image>
-                    <Label VerticalAlignment="Center" Foreground="Red">Blue</Label>
-                </WrapPanel>
-            </ListViewItem>
-            <ListViewItem>
-                <WrapPanel>
-                    <Image Source="/HelloWpf;component/Images/bullet-yellow.png"></Image>
-                    <Label VerticalAlignment="Center" Foreground="Yellow">Blue</Label>
-                </WrapPanel>
-            </ListViewItem>
+        <ListView Name="lv_connect">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text ="Name:"  VerticalAlignment="Center" Foreground="Blue"></TextBlock>
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Foreground="Red" FontWeight="Bold"></TextBlock>
+                        <TextBlock Text="Age:"  VerticalAlignment="Center" Foreground="Yellow"></TextBlock>
+                        <TextBlock Text="{Binding Age}" FontWeight="Bold"></TextBlock>
+                        <TextBlock Text="Email:"></TextBlock>
+                        <TextBlock Text="{Binding EMail}" TextDecorations="Underline" Foreground="Blue" Cursor="Hand"> </TextBlock>
+
+                    </WrapPanel>
+                            
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
         </ListView>
     </Grid>
 </Window>
