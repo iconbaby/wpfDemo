@@ -13,7 +13,7 @@
             <Button Name="btn_selected" Click="Btn_selected_Click" Padding="10" Margin="10" MinWidth="100">Selected</Button>
         </StackPanel>-->
         <Menu DockPanel.Dock="Top" FontSize="15" Background="#FF383E54" Height="20" Foreground="White" Margin="10,4,0,0">
-            <MenuItem Header="_File">
+            <MenuItem Header="_File" >
                 <MenuItem Header="_New" />
                 <MenuItem Header="_Open" />
                 <MenuItem Header="_Save" />

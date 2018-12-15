@@ -112,6 +112,9 @@
     <Compile Include="LabelWindow.xaml.cs">
       <DependentUpon>LabelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListViewWindow.xaml.cs">
+      <DependentUpon>ListViewWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MultiDataStyleWindow.xaml.cs">
       <DependentUpon>MultiDataStyleWindow.xaml</DependentUpon>
     </Compile>
@@ -227,6 +230,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LabelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListViewWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

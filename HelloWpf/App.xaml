@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:HelloWpf"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              DispatcherUnhandledException="Application_DispatcherUnhandledException"
-             StartupUri="TabControlWindow.xaml">
+             StartupUri="ListViewWindow.xaml">
     <Application.Resources>
         <sys:String x:Key="strApp">hello application</sys:String>
         <Style x:Key="grayStyle" TargetType="TextBlock">
