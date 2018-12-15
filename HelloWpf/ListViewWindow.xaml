@@ -27,9 +27,23 @@
             </ListView.ItemTemplate>-->
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
-                    <GridViewColumn Header="Age" Width="120" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
-                    <GridViewColumn Header="Email" Width="120" >
+                    <GridViewColumn  Width="120" DisplayMemberBinding="{Binding Name}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Name" Click="lvUsersColumnHeader_Click">Name</GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn  Width="120" DisplayMemberBinding="{Binding Age}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Age" Click="lvUsersColumnHeader_Click">Age</GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn  Width="120" >
+                        <GridViewColumn.Header>
+                        <GridViewColumnHeader Tag="Sex" Click="lvUsersColumnHeader_Click">Sex</GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                        
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Email}" TextDecorations="Underline" Cursor="Hand" Foreground="Blue"></TextBlock>
