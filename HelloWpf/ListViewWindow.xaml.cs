@@ -33,12 +33,21 @@ namespace HelloWpf
             lv_connect.ItemsSource = listItem;
 
             CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(lv_connect.ItemsSource);
-            PropertyGroupDescription groupDescription = new PropertyGroupDescription("Sex");
+            //PropertyGroupDescription groupDescription = new PropertyGroupDescription("Sex");
             //view.SortDescriptions.Add(new SortDescription("Name", ListSortDirection.Ascending));
             //view.SortDescriptions.Add(new SortDescription("Age", ListSortDirection.Ascending));
-            view.GroupDescriptions.Add(groupDescription);
 
+            //view.GroupDescriptions.Add(groupDescription);
+            view.Filter = UserFilter;
 
+        }
+
+        private bool UserFilter(object item)
+        {
+            if (String.IsNullOrEmpty(tb_ListViewFilter.Text))
+                return true;
+            else
+                return ((item as User).Name.IndexOf(tb_ListViewFilter.Text, StringComparison.OrdinalIgnoreCase) >= 0);
         }
 
         private void lvUsersColumnHeader_Click(object sender, RoutedEventArgs e)
@@ -59,6 +68,12 @@ namespace HelloWpf
             listViewSortAdorner = new SortAdorner(listViewSortCol, newDir);
             AdornerLayer.GetAdornerLayer(listViewSortCol).Add(listViewSortAdorner);
             lv_connect.Items.SortDescriptions.Add(new SortDescription(sortBy, newDir));
+        }
+
+        //filter listview when user input value
+        private void Tb_ListViewFilter_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CollectionViewSource.GetDefaultView(lv_connect.ItemsSource).Refresh();
         }
     }
 

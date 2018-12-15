@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:HelloWpf"
         mc:Ignorable="d"
         Title="ListViewWindow" Height="450" Width="800">
-    <Grid Margin="10">
-        <ListView Name="lv_connect">
+    <StackPanel Margin="10">
+        <TextBox Name="tb_ListViewFilter" TextChanged="Tb_ListViewFilter_TextChanged" Height="20"></TextBox>
+        
+        <ListView Name="lv_connect" Margin="0,10,0,0">
             <ListView.Resources>
                 <Style TargetType="{x:Type GridViewColumnHeader}">
                     <Setter Property="HorizontalContentAlignment" Value="Left"></Setter>
@@ -52,7 +54,7 @@
                     </GridViewColumn>
                 </GridView>
             </ListView.View>
-            <ListView.GroupStyle>
+            <!--<ListView.GroupStyle>-->
                 <!--GroupStyle>
                     <GroupStyle.HeaderTemplate>
                         <DataTemplate>
@@ -60,7 +62,7 @@
                         </DataTemplate>
                     </GroupStyle.HeaderTemplate>
                 </GroupStyle>-->
-                <GroupStyle>
+                <!--<GroupStyle>
                     <GroupStyle.ContainerStyle>
                         <Style TargetType="{x:Type GroupItem}">
                             <Setter Property="Template">
@@ -82,7 +84,7 @@
                         </Style>
                     </GroupStyle.ContainerStyle>
                 </GroupStyle>
-            </ListView.GroupStyle>
+            </ListView.GroupStyle>-->
         </ListView>
-    </Grid>
+    </StackPanel>
 </Window>
