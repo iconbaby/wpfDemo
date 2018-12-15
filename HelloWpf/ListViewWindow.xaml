@@ -8,7 +8,7 @@
         Title="ListViewWindow" Height="450" Width="800">
     <Grid Margin="10">
         <ListView Name="lv_connect">
-            <ListView.ItemTemplate>
+            <!--<ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text ="Name:"  VerticalAlignment="Center" Foreground="Blue"></TextBlock>
@@ -16,13 +16,17 @@
                         <TextBlock Text="Age:"  VerticalAlignment="Center" Foreground="Yellow"></TextBlock>
                         <TextBlock Text="{Binding Age}" FontWeight="Bold"></TextBlock>
                         <TextBlock Text="Email:"></TextBlock>
-                        <TextBlock Text="{Binding EMail}" TextDecorations="Underline" Foreground="Blue" Cursor="Hand"> </TextBlock>
-
+                        <TextBlock Text="{Binding EMail}" TextDecorations="Underline" Foreground="Blue" Cursor="Hand"></TextBlock>
                     </WrapPanel>
-                            
-
                 </DataTemplate>
-            </ListView.ItemTemplate>
+            </ListView.ItemTemplate>-->
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Age" Width="120" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
+                    <GridViewColumn Header="Email" Width="120" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
 
         </ListView>
     </Grid>

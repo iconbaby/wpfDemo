@@ -23,9 +23,9 @@ namespace HelloWpf
         {
             InitializeComponent();
             List<UserList> listItem = new List<UserList>();
-            listItem.Add(new UserList { Name = "jone", Age = 12, EMail = "jone@163.com"});
-            listItem.Add(new UserList { Name = "mike", Age = 24, EMail = "mike@163.com" });
-            listItem.Add(new UserList { Name = "jane", Age = 25, EMail = "jane@163.com" });
+            listItem.Add(new UserList { Name = "jone", Age = 12, Email = "jone@163.com"});
+            listItem.Add(new UserList { Name = "mike", Age = 24, Email = "mike@163.com" });
+            listItem.Add(new UserList { Name = "jane", Age = 25, Email = "jane@163.com" });
             lv_connect.ItemsSource = listItem;
         }
     }
@@ -34,6 +34,6 @@ namespace HelloWpf
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public string EMail { get; set; }
+        public string Email { get; set; }
     }
 }
